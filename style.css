@@ -1,0 +1,107 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+.hero-section{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+.projectBackground{
+    height: 100vh;
+    width: 100vw;
+}
+.portfolio-heading{
+    position: absolute;
+    top: 3rem;
+    color: rgb(6, 0, 0);
+    z-index: 5;
+    font-size: 23px;
+    font-weight: 400;
+}
+.portfolio-heading > h1{
+    margin-top: 0px;
+}
+.portfolio-heading h2,h4{
+    display: inline;
+}
+.blackbox-section{
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 1rem;
+    width: 100vw;
+}
+.blackbox-section span{
+    font-size: 2rem;
+}
+.blackbox-section > h3{
+    margin: 0;
+}
+.card-section{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 1rem;
+    margin-top: 3rem;
+}
+.card{
+    height: 25rem;
+    width: 20rem;
+    box-shadow: rgba(50,50,93,0.25) 0px 6px 12px -2px, 
+                rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    border-radius: 5px;
+}
+.card-img > img{
+    height: 50%;
+    width: 100%;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+.card-content{
+    padding: 0.5rem;
+}
+.card-header > h3{
+    margin: 0;
+    margin-bottom: 0.5rem;
+}
+.bottom-section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 4rem;
+    margin-top: 3rem;
+    color: white;
+}
+.contact{
+    background-color: rgb(77, 201, 77);
+}
+.about{
+    background-color: rgb(172, 20, 20);
+}
+.item{
+    width: 25rem;
+    padding: 1rem;
+}
+@media screen and (max-width: 770px) {
+    .hero-section{
+        height: 50vh;
+    }
+    .projectBackground{
+        height: 50vh;
+    }
+    .bottom-section{
+        gap: 0;
+    }
+    .portfolio-heading{
+        font-size: 15px;
+    }
+}
